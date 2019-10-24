@@ -15,6 +15,8 @@ raine@pequod:~/Custom-Find-Utility$ ./custom_find.py ./Sample_1/ -name 'file[12]
 ./Sample_1/file1  1  :  file1
 
 The -grep option matches file contents against the specified pattern and only lists the files with the contents shown for each line the matches:
+
+
 raine@pequod:~/Custom-Find-Utility$ ./custom_find.py ./Sample_1 -grep '[0-9]+'
 ./Sample_1/file2  1  :  This is line one of file1
 ./Sample_1/file2  2  :  welcome to cop4342
@@ -34,6 +36,8 @@ raine@pequod:~/Custom-Find-Utility$ ./custom_find.py ./Sample_1 -grep '[0-9]+'
 
 
 With both -name and -grep options specified,the matching files and file contents are listed:
+
+
 raine@pequod:~/Custom-Find-Utility$ ./custom_find.py ./Sample_1 -name 'file[12]' -grep '[0-9]+'
 ./Sample_1/file2  1  :  This is line one of file1
 ./Sample_1/file2  2  :  welcome to cop4342
