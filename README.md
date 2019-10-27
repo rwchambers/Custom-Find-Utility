@@ -2,12 +2,12 @@
 A simple Linux find utility implemented in python
 
 With no options specified, csfind.pylists the regular files in the specified directory (it skips directories and other non-regular files when present). Note that the full pathnames are shown
-
+```python
 raine@pequod:~/Custom-Find-Utility$ ./custom_find.py ./Sample_1
 ./Sample_1/file2  1  :  file2
 ./Sample_1/file1  1  :  file1
 ./Sample_1/output.txt  1  :  output.txt
-
+```
 The -nameoption matches file names in the directory against the specified regex pattern and shows the full pathnamesof the matching files found:
 
 raine@pequod:~/Custom-Find-Utility$ ./custom_find.py ./Sample_1/ -name 'file[12]'
